@@ -47,7 +47,7 @@ export default function FeedbackModal({ open, setOpen }: Prop) {
     } else if (localStorage.getItem("theme") === "light") {
       setIsDark(false);
     } else {
-      alert("Nothing in theme");
+      console.log("Nothing in theme");
     }
   }, []);
 

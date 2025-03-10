@@ -17,7 +17,7 @@ function PersonalPage() {
     } else if (localStorage.getItem("theme") === "light") {
       setIsDark(false);
     } else {
-      alert("Nothing in theme");
+      console.log("Nothing in theme");
     }
   }, []);
 

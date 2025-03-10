@@ -32,7 +32,7 @@ function ModelCard({ open, setOpen }: Pro) {
     } else if (localStorage.getItem("theme") === "light") {
       setIsDark(false);
     } else {
-      alert("Nothing in theme");
+      console.log("Nothing in theme");
     }
   }, []);
   const CreateSticky = async (formData: FormData) => {
