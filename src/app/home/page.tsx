@@ -287,14 +287,14 @@ function Page() {
               fontSize: { xs: 10, sm: 17 },
             }}
           >
-            Welcome to Organic Mind ✌️
+            {`Welcome to Organic Mind ✌️`}
           </Typography>
           <Typography
             sx={{
               fontSize: { xs: 8, sm: 15 },
             }}
           >
-            Here's your report
+            {`Here's your report`}
           </Typography>
         </Box>
         <Box>
