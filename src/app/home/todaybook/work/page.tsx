@@ -47,7 +47,7 @@ function PersonalPage() {
         }}
       >
         <Typography className="text-2xl text-yellow-300 font-mono text-center">
-          'Working' can be 'playing'.
+          {`'Working' can be 'playing'.`}
         </Typography>
       </Box>
       <Box

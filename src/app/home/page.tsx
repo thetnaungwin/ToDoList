@@ -15,7 +15,7 @@ import formatDateToCustomString, {
 import ModelFeedBack from "@/components/modelFeedBack";
 import { Colors } from "@/config/color";
 
-function page() {
+function Page() {
   const [allTasks, setAllTasks] = useState<any[]>();
   const [open, setOpen] = useState<boolean>(false);
   const [chartWidth, setChartWidth] = useState(window.innerWidth);
@@ -640,4 +640,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

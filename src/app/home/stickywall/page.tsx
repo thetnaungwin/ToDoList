@@ -7,7 +7,7 @@ import { deleteStickyWall, getStickyWall } from "@/libs/action";
 import ModelCard from "@/components/modelCard";
 import { Colors } from "@/config/color";
 
-function page() {
+function Page() {
   const [stickyWall, setStickyWall] = useState<any[]>();
   const [modelOpen, setModelOpen] = useState<boolean>(false);
   const [pressTimer, setPressTimer] = useState<any>(null);
@@ -159,4 +159,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

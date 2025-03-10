@@ -18,7 +18,7 @@ import DynamicBtn from "./DynamicBtn";
 import { redirect } from "next/navigation";
 import { Colors } from "@/config/color";
 
-function page() {
+function Page() {
   const [tasks, setTasks] = useState<any[]>();
   const [isDark, setIsDark] = useState<boolean>();
 
@@ -266,4 +266,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
