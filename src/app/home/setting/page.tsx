@@ -9,15 +9,15 @@ import {
   Switch,
   TextField,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { upload } from "@vercel/blob/client";
 
 function Setting() {
-  const [name, setName] = React.useState<string>("");
-  const [life, setLife] = React.useState<string>("");
-  const [loading, setLoading] = React.useState<boolean>(false);
-  const [themeMode, setThemeMode] = React.useState<string>("");
-  React.useEffect(() => {
+  const [name, setName] = useState<string>("");
+  const [life, setLife] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
+  const [themeMode, setThemeMode] = useState<string>("");
+  useEffect(() => {
     const alreadyTheme = localStorage.getItem("theme");
     alreadyTheme && setThemeMode(alreadyTheme);
 

@@ -2,16 +2,16 @@
 
 import { Box, Typography } from "@mui/material";
 import styles from "../Scroll.module.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { getPersonalTasks } from "@/libs/action";
 import DynamicBtn from "../DynamicBtn";
 import { Colors } from "@/config/color";
 
 function PersonalPage() {
-  const [personalTasks, setPersonalTasks] = React.useState<any[]>([]);
-  const [isDark, setIsDark] = React.useState<boolean>();
+  const [personalTasks, setPersonalTasks] = useState<any[]>([]);
+  const [isDark, setIsDark] = useState<boolean>();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (localStorage.getItem("theme") === "dark") {
       setIsDark(true);
     } else if (localStorage.getItem("theme") === "light") {
@@ -21,7 +21,7 @@ function PersonalPage() {
     }
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
       setPersonalTasks(await getPersonalTasks());
     };
