@@ -22,8 +22,14 @@ export default function RootLayout({
       console.log("Nothing in theme");
     }
   }, []);
+
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content={isDark ? "#000000" : "#ffffff"} />
+      </head>
       <body
         className={inter.className}
         style={{
